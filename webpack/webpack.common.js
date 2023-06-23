@@ -1,9 +1,11 @@
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
-    mode: 'development',
-    devtool: "source-map",
     entry: './index.js',
     output: {
-        filename: './anim.js'
+        filename: './anim.js',
+        path: path.resolve(__dirname, '../dist')
     },
     module: {
         rules: [
@@ -16,5 +18,8 @@ module.exports = {
                 ]
             },
         ]
-    }
+    },
+    plugins: [
+        new CleanWebpackPlugin()
+    ]
 }

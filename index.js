@@ -2,7 +2,7 @@ import EntryAndExitAnimationMgr from "./anim/mgr/entryAndExit";
 
 EntryAndExitAnimationMgr.getInstance().addAnimation({
     duration: 3000,
-    className: 'text2',
+    className: 'text1',
     interpolatorCurve: [0, 0, 1, 1],
     visualState: [{
         horizontalOffset: 0,
